@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form Profil - Salwa</title>
+
+	<link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<style>
+
+:root{
+			--ungu: #a898c2;
+			--hijau: #bdd3a2;
+			--background: #e7e0c2;
+			--text: #2E2E2E;
+			--white: #ffffff;
+		}
+
+		body{
+			background-color: var(--background);
+			font-family: 'Poppins', sans-serif;
+			margin: 0;
+			color: var(--text);
+		}
+
+		/* NAVBAR */
+
+		nav{
+			background-color: var(--hijau);
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 1000;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+		}
+
+		nav ul{
+			margin: 0;
+			padding: 25px;
+			text-align: center;
+		}
+
+		nav ul li{
+			display: inline-block;
+			margin: 0 18px;
+			font-size: 14px;
+			font-weight: 500;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+
+		nav ul li a{
+			text-decoration: none;
+			color: var(--text);
+			transition: 0.3s;
+		}
+
+		nav ul li a:hover{
+			color: var(--ungu);
+		}
+
+		.form-section{
+			padding: 140px 20px 80px;
+		}
+
+		.form-container{
+			max-width: 700px;
+			margin: auto;
+			background-color: white;
+			padding: 50px;
+			border-radius: 20px;
+			box-shadow: 0 0 20px rgba(0,0,0,0.08);
+		}
+
+		.form-container h1{
+			text-align: center;
+			margin-bottom: 10px;
+			color: #7A6F9B;
+			font-size: 38px;
+		}
+
+		.form-container p{
+			text-align: center;
+			margin-bottom: 40px;
+			color: #666;
+		}
+
+		form label{
+			display: block;
+			margin-bottom: 8px;
+			font-weight: 500;
+		}
+
+		form input,
+		form textarea{
+			width: 100%;
+			padding: 14px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			margin-bottom: 25px;
+			font-family: 'Poppins', sans-serif;
+			font-size: 14px;
+			box-sizing: border-box;
+			transition: 0.3s;
+		}
+
+		form input:focus,
+		form textarea:focus{
+			outline: none;
+			border-color: #B09FCA;
+			box-shadow: 0 0 5px rgba(176,159,202,0.5);
+		}
+
+		form textarea{
+			resize: none;
+		}
+
+		.button{
+			background-color: #B09FCA;
+			color: white;
+			border: none;
+			padding: 14px 30px;
+			border-radius: 10px;
+			font-size: 15px;
+			cursor: pointer;
+			transition: 0.3s;
+			font-weight: 500;
+		}
+
+		.button:hover{
+			background-color: #9b89bb;
+		}
+
+		.hasil{
+			margin-top: 40px;
+			background-color: #f3f0fa;
+			padding: 30px;
+			border-radius: 15px;
+			display: none;
+		}
+
+		.hasil h2{
+			color: #7A6F9B;
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+
+		.hasil p{
+			text-align: left;
+			margin-bottom: 12px;
+			color: #333;
+		}
+
+		
+		footer{
+			background-color: var(--hijau);
+			color: var(--ungu);
+			text-align: center;
+			padding: 35px;
+			margin-top: 50px;
+		}
+
+		footer h3{
+			font-family: 'Playfair Display', serif;
+			font-size: 40px;
+			margin-bottom: 20px;
+		}
+
+
+	</style>
+
+</head>
+
+<body>
+
+	<nav>
+
+		<ul>
+
+			<li>
+				<a href="index.html">
+					Beranda
+				</a>
+			</li>
+
+			<li>
+				<a href="tentang.html">
+					Tentang
+				</a>
+			</li>
+
+			<li>
+				<a href="profil.html">
+					<strong>-Profil-</strong>
+				</a>
+			</li>
+
+			<li>
+				<a href="mailto:salwaputriihsan@gmail.com">
+					Kontak
+				</a>
+			</li>
+
+			<li>
+				<a href="https://www.instagram.com/putrisalwa_?igsh=eTBqeW00cXl2Y29h" target="_blank">
+					Instagram
+				</a>
+			</li>
+
+		</ul>
+
+	</nav>
+
+	<section class="form-section">
+
+		<div class="form-container">
+
+			<h1>Form Profil</h1>
+
+			<p>
+				Isi data diri singkat di bawah ini
+			</p>
+
+			<form id="profilForm">
+
+				<label>NIM</label>
+				<input type="text" id="nim" required>
+
+				<label>Nama</label>
+				<input type="text" id="nama" required>
+
+				<label>Alamat</label>
+				<textarea id="alamat" rows="3" required></textarea>
+
+				<label>Hobi</label>
+				<input type="text" id="hobi" required>
+
+				<label>Instagram</label>
+				<input type="text" id="instagram" placeholder="@username" required>
+
+				<button type="submit" class="button">
+					Simpan
+				</button>
+
+			</form>
+
+			<div class="hasil" id="hasilData">
+
+				<h2>Hasil Data</h2>
+
+				<p>
+					<strong>NIM :</strong>
+					<span id="hasilNim"></span>
+				</p>
+
+				<p>
+					<strong>Nama :</strong>
+					<span id="hasilNama"></span>
+				</p>
+
+				<p>
+					<strong>Alamat :</strong>
+					<span id="hasilAlamat"></span>
+				</p>
+
+				<p>
+					<strong>Hobi :</strong>
+					<span id="hasilHobi"></span>
+				</p>
+
+				<p>
+					<strong>Instagram :</strong>
+					<span id="hasilInstagram"></span>
+				</p>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<footer>
+
+		<h3>Terima Kasih 🌷</h3>
+
+		<p>
+			Dibuat oleh Salwa • 2026
+		</p>
+
+	</footer>
+
+	<script>
+
+	const form = document.getElementById("profilForm");
+
+	form.addEventListener("submit", function(event){
+
+		event.preventDefault();
+
+		/* SIMPAN DATA KE LOCAL STORAGE */
+
+		localStorage.setItem(
+			"nim",
+			document.getElementById("nim").value
+		);
+
+		localStorage.setItem(
+			"nama",
+			document.getElementById("nama").value
+		);
+
+		localStorage.setItem(
+			"alamat",
+			document.getElementById("alamat").value
+		);
+
+		localStorage.setItem(
+			"hobi",
+			document.getElementById("hobi").value
+		);
+
+		localStorage.setItem(
+			"instagram",
+			document.getElementById("instagram").value
+		);
+
+		/* PINDAH KE HALAMAN PROFIL-TAMPIL */
+
+		window.location.href = "profil-tampil.html";
+
+	});
+
+	</script>
+
+</body>
+</html>

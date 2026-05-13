@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Desain UI/UX E-Commerce - Salwa</title>
+
+	<link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+
+	<!-- FONT -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+	<style>
+
+		:root{
+			--ungu: #a898c2;
+			--hijau: #bdd3a2;
+			--background: #e7e0c2;
+			--text: #2E2E2E;
+			--white: #ffffff;
+		}
+
+		body{
+			background-color: var(--background);
+			font-family: 'Poppins', sans-serif;
+			margin: 0;
+			color: var(--text);
+		}
+
+		.project-container{
+			max-width: 1100px;
+			margin: 120px auto 40px;
+			background-color: white;
+			box-shadow: 0 0 20px rgba(0,0,0,0.08);
+			border-radius: 20px;
+			overflow: hidden;
+		}
+
+		/* NAVBAR */
+
+		nav{
+			background-color: var(--hijau);
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 1000;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+		}
+
+		nav ul{
+			margin: 0;
+			padding: 25px;
+			text-align: center;
+		}
+
+		nav ul li{
+			display: inline-block;
+			margin: 0 18px;
+			font-size: 14px;
+			font-weight: 500;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+
+		nav ul li a{
+			text-decoration: none;
+			color: var(--text);
+			transition: 0.3s;
+		}
+
+		nav ul li a:hover{
+			color: var(--ungu);
+		}
+
+		/* HEADER */
+
+		.image-container{
+			position: relative;
+		}
+
+		.full-width-image{
+			width: 100%;
+			height: 550px;
+			object-fit: cover;
+			filter: brightness(70%);
+		}
+
+		.project-title{
+			position: absolute;
+			bottom: 60px;
+			left: 60px;
+			color: white;
+			font-size: 48px;
+			font-family: 'Playfair Display', serif;
+			line-height: 1.3;
+			text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+		}
+
+		/* BREADCRUMB */
+
+		.breadcrumb{
+			padding: 20px 40px;
+			background-color: #f3f3f3;
+			font-size: 14px;
+		}
+
+		.breadcrumb a{
+			text-decoration: none;
+			color: var(--gold);
+		}
+
+		/* CONTENT */
+
+		.content-section{
+			padding: 60px 50px;
+			line-height: 1.9;
+		}
+
+		.content-section h2{
+			font-family: 'Playfair Display', serif;
+			font-size: 32px;
+			margin-bottom: 20px;
+			color: var(--ungu);
+		}
+
+		.highlight-box{
+			background-color: #EEF3E7;
+			padding: 30px;
+			border-left: 6px solid var(--hijau);
+			border-radius: 15px;
+			margin-top: 35px;
+		}
+
+		/* GALLERY */
+
+		.gallery{
+			padding: 0 50px 60px;
+		}
+
+		.gallery h2{
+			font-family: 'Playfair Display', serif;
+			font-size: 32px;
+			color: var(--ungu);
+			margin-bottom: 25px;
+		}
+
+		.gallery-images{
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 20px;
+		}
+
+		.gallery-images img{
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+			border-radius: 15px;
+			transition: 0.3s;
+		}
+
+		.gallery-images img:hover{
+			transform: scale(1.03);
+		}
+
+		/* FOOTER */
+
+		footer{
+			background-color: var(--hijau);
+			color: var(--ungu);
+			text-align: center;
+			padding: 35px;
+			margin-top: 50px;
+		}
+
+		footer h3{
+			font-family: 'Playfair Display', serif;
+			font-size: 40px;
+			margin-bottom: 20px;
+		}
+
+		/* RESPONSIVE */
+
+		@media screen and (max-width: 768px){
+
+			.project-title{
+				font-size: 34px;
+				left: 30px;
+				bottom: 40px;
+			}
+
+			.content-section,
+			.gallery{
+				padding: 40px 25px;
+			}
+
+			.full-width-image{
+				height: 400px;
+			}
+
+			nav ul li{
+				margin: 0 8px;
+				font-size: 12px;
+			}
+
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<nav>
+
+		<ul>
+
+			<li>
+				<a href="index.html">
+					<strong>-Beranda-</strong>
+				</a>
+			</li>
+
+			<li>
+				<a href="tentang.html">
+					Tentang
+				</a>
+			</li>
+
+			<li>
+				<a href="profil.html">
+					Profil
+				</a>
+			</li>
+
+			<li>
+				<a href="mailto:salwaputriihsan@gmail.com">
+					Kontak
+				</a>
+			</li>
+
+			<li>
+				<a href="https://www.instagram.com/putrisalwa_?igsh=eTBqeW00cXl2Y29h" target="_blank">
+					Instagram
+				</a>
+			</li>
+
+		</ul>
+
+	</nav>
+
+	<!-- CONTENT -->
+
+	<div class="project-container">
+
+		<div class="image-container">
+
+			<img src="img/figma.png" class="full-width-image" alt="UI UX">
+
+			<h1 class="project-title">
+				Desain UI/UX <br>
+				E-Commerce
+			</h1>
+
+		</div>
+
+		<div class="breadcrumb">
+			<a href="index.html">Beranda</a> / Desain UI/UX E-Commerce
+		</div>
+
+		<section class="content-section">
+
+			<h2>Cerita Singkat</h2>
+
+			<p>
+				Project ini merupakan tugas UAS mata kuliah 
+				Rekayasa Perangkat Lunak. Dalam tugas ini kami 
+				diminta untuk mendesain UI/UX aplikasi e-commerce 
+				toko pakaian menggunakan aplikasi Figma.
+			</p>
+
+			<p>
+				Saat mengerjakan desain ini saya merasa sangat enjoy 
+				karena konsep desain, warna, dan tampilan semuanya 
+				berasal dari ide saya sendiri. Saya juga senang 
+				mengatur tata letak agar terlihat rapi dan nyaman dilihat.
+			</p>
+
+			<div class="highlight-box">
+
+				<h2>Hal yang Saya Sukai</h2>
+
+				<p>
+					Saya sangat suka mengkombinasikan warna-warna pastel 
+					dan memilih icon-icon lucu agar tampilan aplikasi 
+					terlihat lebih aesthetic dan menarik.
+				</p>
+
+				<p>
+					Dari project ini saya belajar bagaimana membuat 
+					desain yang tidak hanya cantik, tetapi juga nyaman 
+					digunakan oleh pengguna.
+				</p>
+
+				<p>
+					Selama proses desain berlangsung saya merasa lebih 
+					bebas menuangkan kreativitas dan mencoba berbagai 
+					ide tampilan yang berbeda.
+				</p>
+
+			</div>
+
+		</section>
+
+		<!-- GALLERY -->
+
+		<section class="gallery">
+
+			<h2>Galeri Desain</h2>
+
+			<div class="gallery-images">
+
+				<img src="img/figma.png" alt="UI UX 1">
+
+				<img src="img/figma1.png" alt="UI UX 2">
+
+				<img src="img/figma2.png" alt="UI UX 3">
+
+			</div>
+
+		</section>
+
+	</div>
+
+	<!-- FOOTER -->
+
+	<footer id="contact">
+
+		<h3>Terima Kasih 🌷</h3>
+
+		<p>
+			Dibuat oleh Salwa • 2026
+		</p>
+
+	</footer>
+
+</body>
+</html>

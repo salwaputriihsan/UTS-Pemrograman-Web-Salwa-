@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pengalaman THR Ramadhan - Salwa</title>
+
+	<link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+
+	<!-- FONT -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+	<style>
+
+		:root{
+			--ungu: #a898c2;
+			--hijau: #bdd3a2;
+			--background: #e7e0c2;
+			--text: #2E2E2E;
+			--white: #ffffff;
+		}
+
+		body{
+			background-color: var(--background);
+			font-family: 'Poppins', sans-serif;
+			margin: 0;
+			color: var(--text);
+		}
+
+		.project-container{
+			max-width: 1100px;
+			margin: 120px auto 40px;
+			background-color: white;
+			box-shadow: 0 0 20px rgba(0,0,0,0.08);
+			border-radius: 20px;
+			overflow: hidden;
+		}
+
+		/* NAVBAR */
+
+		nav{
+			background-color: var(--hijau);
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 1000;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+		}
+
+		nav ul{
+			margin: 0;
+			padding: 25px;
+			text-align: center;
+		}
+
+		nav ul li{
+			display: inline-block;
+			margin: 0 18px;
+			font-size: 14px;
+			font-weight: 500;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+
+		nav ul li a{
+			text-decoration: none;
+			color: var(--text);
+			transition: 0.3s;
+		}
+
+		nav ul li a:hover{
+			color: var(--ungu);
+		}
+
+		/* HEADER */
+
+		.image-container{
+			position: relative;
+		}
+
+		.full-width-image{
+			width: 100%;
+			height: 550px;
+			object-fit: cover;
+			filter: brightness(70%);
+		}
+
+		.project-title{
+			position: absolute;
+			bottom: 60px;
+			left: 60px;
+			color: white;
+			font-size: 48px;
+			font-family: 'Playfair Display', serif;
+			line-height: 1.3;
+			text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+		}
+
+		/* BREADCRUMB */
+
+		.breadcrumb{
+			padding: 20px 40px;
+			background-color: #f3f3f3;
+			font-size: 14px;
+		}
+
+		.breadcrumb a{
+			text-decoration: none;
+			color: var(--gold);
+		}
+
+		/* CONTENT */
+
+		.content-section{
+			padding: 60px 50px;
+			line-height: 1.9;
+		}
+
+		.content-section h2{
+			font-family: 'Playfair Display', serif;
+			font-size: 32px;
+			margin-bottom: 20px;
+			color: var(--ungu);
+		}
+
+		.highlight-box{
+			background-color: #EEF3E7;
+			padding: 30px;
+			border-left: 6px solid var(--hijau);
+			border-radius: 15px;
+			margin-top: 35px;
+		}
+
+		/* GALLERY */
+
+		.gallery{
+			padding: 0 50px 60px;
+		}
+
+		.gallery h2{
+			font-family: 'Playfair Display', serif;
+			font-size: 32px;
+			color: var(--ungu);
+			margin-bottom: 25px;
+		}
+
+		.gallery-images{
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 20px;
+		}
+
+		.gallery-images img{
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+			border-radius: 15px;
+			transition: 0.3s;
+		}
+
+		.gallery-images img:hover{
+			transform: scale(1.03);
+		}
+
+		/* FOOTER */
+
+		footer{
+			background-color: var(--hijau);
+			color: var(--ungu);
+			text-align: center;
+			padding: 35px;
+			margin-top: 50px;
+		}
+
+		footer h3{
+			font-family: 'Playfair Display', serif;
+			font-size: 40px;
+			margin-bottom: 20px;
+		}
+
+		/* RESPONSIVE */
+
+		@media screen and (max-width: 768px){
+
+			.project-title{
+				font-size: 34px;
+				left: 30px;
+				bottom: 40px;
+			}
+
+			.content-section,
+			.gallery{
+				padding: 40px 25px;
+			}
+
+			.full-width-image{
+				height: 400px;
+			}
+
+			nav ul li{
+				margin: 0 8px;
+				font-size: 12px;
+			}
+
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<nav>
+
+		<ul>
+
+			<li>
+				<a href="index.html">
+					<strong>-Beranda-</strong>
+				</a>
+			</li>
+
+			<li>
+				<a href="tentang.html">
+					Tentang
+				</a>
+			</li>
+
+			<li>
+				<a href="profil.html">
+					Profil
+				</a>
+			</li>
+
+			<li>
+				<a href="mailto:salwaputriihsan@gmail.com">
+					Kontak
+				</a>
+			</li>
+
+			<li>
+				<a href="https://www.instagram.com/putrisalwa_?igsh=eTBqeW00cXl2Y29h" target="_blank">
+					Instagram
+				</a>
+			</li>
+
+		</ul>
+
+	</nav>
+
+	<!-- CONTENT -->
+
+	<div class="project-container">
+
+		<div class="image-container">
+
+			<img src="img/thr.jpeg" class="full-width-image" alt="THR Ramadhan">
+
+			<h1 class="project-title">
+				Panitia THR <br>
+				Ramadhan 2026
+			</h1>
+
+		</div>
+
+		<div class="breadcrumb">
+			<a href="index.html">Beranda</a> / Pengalaman THR Ramadhan
+		</div>
+
+		<section class="content-section">
+
+			<h2>Cerita Singkat</h2>
+
+			<p>
+				Pada bulan Ramadhan tahun 2026, saya mengikuti kegiatan 
+				THR (Terima Hagala Ramadhan) sebagai salah satu panitia 
+				dari Rumah Dua Jari. Kegiatan ini berlangsung selama 
+				3 hari dan menjadi pengalaman yang sangat berkesan bagi saya.
+			</p>
+
+			<p>
+				Selama kegiatan berlangsung, kami mengajak anak-anak 
+				yatim/piatu dan dhuafa untuk merasakan kebahagiaan 
+				di bulan Ramadhan. Kami menemani mereka berbelanja 
+				baju lebaran, berbuka puasa bersama, dan melaksanakan 
+				shalat tarawih bersama.
+			</p>
+
+			<div class="highlight-box">
+
+				<h2>Hal yang Saya Rasakan</h2>
+
+				<p>
+					Selama 3 hari kegiatan, saya merasakan banyak emosi 
+					yang bercampur menjadi satu. Saya merasa bahagia saat 
+					melihat adik-adik tersenyum ketika memilih baju lebaran 
+					mereka, tetapi juga merasa sedih melihat perjuangan hidup 
+					yang mereka jalani sejak kecil.
+				</p>
+
+				<p>
+					Dari pengalaman ini saya belajar tentang rasa syukur, 
+					kepedulian terhadap sesama, kerja sama tim, dan pentingnya 
+					berbagi kebahagiaan kepada orang lain.
+				</p>
+
+			</div>
+
+		</section>
+
+		<!-- GALLERY -->
+
+		<section class="gallery">
+
+			<h2>Galeri Kegiatan</h2>
+
+			<div class="gallery-images">
+
+				<img src="img/thr.jpeg" alt="THR 1">
+
+				<img src="img/thr3.jpeg" alt="THR 2">
+
+				<img src="img/thr4.jpeg" alt="THR 3">
+
+			</div>
+
+		</section>
+
+	</div>
+
+	<!-- FOOTER -->
+
+	<footer id="contact">
+
+		<h3>Terima Kasih 🌷</h3>
+
+		<p>
+			Dibuat oleh Salwa • 2026
+		</p>
+
+	</footer>
+
+</body>
+</html>
